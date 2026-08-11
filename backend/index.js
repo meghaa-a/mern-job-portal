@@ -7,14 +7,14 @@ import userRoute from "./routes/user.route.js";
 import companyRoute from "./routes/company.route.js";
 import jobRoute from "./routes/job.route.js";
 import applicationRoute from "./routes/application.route.js";
-import savedJobRoute from "./routes/savedJob.route.js";
+// import savedJobRoute from "./routes/savedJob.route.js";
 dotenv.config({});
 
 const app = express();
 
 // middleware
 app.use(express.json());
-app.use("/api/v1/saved", savedJobRoute);
+// app.use("/api/v1/saved", savedJobRoute);
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 const corsOptions = {
